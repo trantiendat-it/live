@@ -1,4 +1,12 @@
-[{"title":"Ví Dặm Một Mùa Trăng - Thanh Tài ft Thanh Quý","file":"https://youtu.be/L-taRc4CVjY"},
+[{"title":"Hạ Long Biển Nhớ - Bùi Ngọc Liên","file":"https://youtu.be/OcA2YuFwEM4"},
+
+{"title":"Nhật Lệ Trong Tôi - Thanh Tài","file":"https://youtu.be/lTZstjzBDLg"},
+
+{"title":"Về Quảng Bình Đi Anh  - Phạm Ánh Nguyệt","file":"https://youtu.be/6rsKsN8EpFg"},
+
+{"title":"Câu Ví Dặm Tìm Về - Thanh Quý ft Đăng Thuật","file":"https://youtu.be/4XcWpZrPvQI"},
+
+{"title":"Ví Dặm Một Mùa Trăng - Thanh Tài ft Thanh Quý","file":"https://youtu.be/L-taRc4CVjY"},
 
 {"title":"Bến Xưa Ví Dặm Tìm Về - Thanh Tài","file":"https://youtu.be/eKsbwDto0E0"},
 
