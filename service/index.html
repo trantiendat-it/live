@@ -252,9 +252,16 @@ h1 {
 
 <!-- END MAIN -->
 </div>
-<button type='button' id="button_id" onClick='LogIn()'>Đăng nhập</button>
+<!--<<<button type='button' id="button_id" onClick='LogIn()'>Đăng nhập</button>
 <script src='https://cdn-trantiendat.github.io/login/asset/js/script.js'></script>
-<script>
+<script> 												<script>function myFunction() { 	
+
+document.getElementById("button_id").value = "Clicked"; 	
+
+} 
+
+setInterval(function(){ document.getElementById("button_id").click();	 }, 2000); 
+</script>-->
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -298,11 +305,7 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
 </script>
-<script> 												
-function myFunction() { 	
-document.getElementById("button_id").value = "Clicked"; 	
-} 
-setInterval(function(){ document.getElementById("button_id").click();	 }, 2000); </script>
 </body>
 </html>
