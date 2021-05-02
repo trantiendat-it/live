@@ -1,190 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+</style><script type="text/JavaScript">
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script><script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
 
-  <title>Client or Partners Logo Slider  - Bootsnipp.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">
-    body {
-      background-color: #000;
+<style>
+     img {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
     }
-    .slick-slide {
-      margin: 0px 7px;
-    }
+</style>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
-    .slick-slide img {
-      width: 70%;
-      border-radius: 50%;
-      padding: 2px;
-      border: 1px solid gray;
-    }
+* {
+  box-sizing: border-box;
+}  				
+body {
+  background-color: #000;
+  font-family: raleway;
+}
 
-    .slick-slide img:hover {
-      border: 1px solid #fff;
-    }
-    .slick-slider {
-     position:relative;
-    top:50%;
-    }
+.main {
+  max-width: 100%;
+  margin: auto;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
 
-    .slick-list
-    {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
-    .slick-list:focus
-    {
-      outline: none;
-    }
-    .slick-list.dragging
-    {
-      cursor: pointer;
-      cursor: hand;
-    }
+.row {
+  margin: 10px -16px;
+}
 
-    .slick-slider .slick-track,
-    .slick-slider .slick-list
-    {
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      -o-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+.row, .row > .column {
+  padding: 8px;
+}
 
-    .slick-track
-    {
-      position: relative;
-      top: 0;
-      left: 0;
-      display: block;
-    }
-    .slick-track:before,
-    .slick-track:after
-    {
-      display: table;
-      content: '';
-    }
-    .slick-track:after
-    {
-      clear: both;
-    }
-    .slick-loading .slick-track
-    {
-      visibility: hidden;
-    }
+.column {
+  float: left;
+  width: 20%;
+  display: none;
+}
 
-    .slick-slide
-    {
-      display: none;
-      float: left;
-      height: 100%;
-      min-height: 1px;
-    }
-    [dir='rtl'] .slick-slide
-    {
-      float: right;
-    }
-    .slick-slide img
-    {
-      display: block;
-    }
-    .slick-slide.slick-loading img
-    {
-      display: none;
-    }
-    .slick-slide.dragging img
-    {
-      pointer-events: none;
-    }
-    .slick-initialized .slick-slide
-    {
-      display: block;
-    }
-    .slick-loading .slick-slide
-    {
-      visibility: hidden;
-    }
-    .slick-vertical .slick-slide
-    {
-      display: block;
-      height: auto;
-      border: 1px solid transparent;
-    }
-    .slick-arrow.slick-hidden {
-      display: none;
-    }
-    iframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: transparent;
+}
+.img{
+  width:80%;
+  border: 1px solid gray;
+  border-radius:10%;
+  padding: 5px;
+}
+.img:hover {
+  border: 1px solid #fff;
+}
+    
+.show {
+  display: block;
+}
+
+.btn {
+  font-family:raleway;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  font-family: raleway;
+  background-color: #666;
+  color: white;
+}
+
+.container-iframe{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0%;
+  left: 1%;    
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+</style>
+
+
 </head>
 <body>
+<div class="container-iframe">
+    <iframe class="responsive-iframe" id="container-player" src="https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1" ></iframe>
+    </div><br>
+    <div class="main">
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">TẤT CẢ</button>
+  <button class="btn" onclick="filterSelection('vtv')">VTV</button>
+  <button class="btn" onclick="filterSelection('vtc')">VTC</button>
+  <button class="btn" onclick="filterSelection('htv')">HTV</button>
+  <button class="btn" onclick="filterSelection('htvc')">HTVC</button>
+  <button class="btn" onclick="filterSelection('dp')">ĐỊA PHƯƠNG</button>
+</div>
 
-  <div class="container">
-    <iframe id="MPlayer" src="/live/channel/ttd/ttd1" class="iframe"></iframe>
-    
-    <section class="customer-logos slider">
-      <div class="slide">
-        <img onclick="document.getElementById('MPlayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://on-trantiendat.shortcm.li/logo_ttd.truyenhinh">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-      </div>
-      <div class="slide">
-        <img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
-      </div>
-    </section>
-
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column vtv">
+    <div class="content">
+  <img class="img" onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/lights.jpg">
+    </div>
   </div>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        autoplay: false,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-          breakpoint: 520,
-          settings: {
-            slidesToShow: 5
-          }
-        }]
-      });
-    });
-  </script>
+  <div class="column vtv">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" class="img">
+    </div>
+  </div>
+  <div class="column vtv">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtv.jpg" alt="vtv" class="img">
+    </div>
+  </div>
+  
+  <div class="column vtc">
+    <div class="content">
+      <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtc1.jpg" alt="Car" class="img">
+    </div>
+  </div>
+  <div class="column vtc">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtc2.jpg" alt="Car" class="img">
+    </div>
+  </div>
+  <div class="column vtc">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtc3.jpg" alt="Car" class="img">
+       </div>
+  </div>
+
+  <div class="column HTV">
+    <div class="content">
+      <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/HTV1.jpg" alt="Car" class="img">
+        </div>
+  </div>
+  <div class="column HTV">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/HTV2.jpg" alt="Car" class="img">
+       </div>
+  </div>
+  <div class="column HTV">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/HTV3.jpg" alt="Car" class="img">
+      </div>
+  </div>
+   <div class="column vtv">
+    <div class="content">
+              <img class="img" onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/lights.jpg">
+    </div>
+  </div>
+  <div class="column vtv">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" class="img">
+    </div>
+  </div>
+  <div class="column vtv">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtv.jpg" alt="vtv" class="img">
+    </div>
+  </div>
+  
+  <div class="column vtc">
+    <div class="content">
+      <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtc1.jpg" alt="Car" class="img">
+    </div>
+  </div>
+  <div class="column vtc">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtc2.jpg" alt="Car" class="img">
+    </div>
+  </div>
+  <div class="column vtc">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/vtc3.jpg" alt="Car" class="img">
+       </div>
+  </div>
+
+  <div class="column HTV">
+    <div class="content">
+      <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/HTV1.jpg" alt="Car" class="img">
+        </div>
+  </div>
+  <div class="column HTV">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/HTV2.jpg" alt="Car" class="img">
+       </div>
+  </div>
+  <div class="column HTV">
+    <div class="content">
+    <img onclick="document.getElementById('container-player').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://www.w3schools.com/w3images/HTV3.jpg" alt="Car" class="img">
+      </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<button type='button' id="button_id" onClick='LogIn()'>Đăng nhập</button>
+<script src='https://cdn-trantiendat.github.io/login/asset/js/script.js'></script>
+<script> 												
+function myFunction() { 	
+document.getElementById("button_id").value = "Clicked"; 	
+} 
+setInterval(function(){ document.getElementById("button_id").click();	 }, 2000); 
+</script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 </body>
 </html>
