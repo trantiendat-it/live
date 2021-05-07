@@ -2,7 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/JavaScript">
+<style>
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+</style><script type="text/JavaScript">
 function killCopy(e){
 return false
 }
@@ -14,6 +23,7 @@ if (window.sidebar){
 document.onmousedown=killCopy
 document.onclick=reEnable
 }
+</script><script type="text/javascript">
       function nocontext(e) {
         var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
         if (clickedTag == "IMG")
@@ -23,19 +33,13 @@ document.onclick=reEnable
     </script>
 
 <style>
-body{
--webkit-touch-callout: none;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
-}
      img {
       -webkit-user-drag: none;
       user-drag: none;
       -webkit-touch-callout: none;
     }
+</style>
+<style>
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 * {
@@ -83,7 +87,6 @@ h1 {
   border: 1px solid gray;
   border-radius:10%;
   padding: 5px;
-  cursor: pointer;
 }
 .img:hover {
   border: 1px solid #fff;
@@ -119,28 +122,23 @@ h1 {
   padding-top: 56.25%;
 }
 .responsive-iframe {
-  position:fixed; 
-  top:0; 
-  left:0; 
-  bottom:0; 
-      right:0;
-      width:100%; 
-      height:100%;
-      border:none;
-      margin:0; 
-      padding:0;
-      overflow:hidden; 
-      z-index:999999;"
+  position: absolute;
+  top: 0%;
+  left: 1%;    
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 </style>
+
 
 </head>
 <body>
 <div class="container-iframe">
     <!--<iframe class="responsive-iframe" id="containerplayer" src="https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1" ></iframe>-->
   <iframe class="responsive-iframe" id="containerplayer"></iframe>
-    </div>
+    </div><br>
     <!--
 value:document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'
 value:containerplayer()
@@ -164,7 +162,7 @@ value:containerplayer()
   </div>
   <div class="column vtv">
     <div class="content">
-    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg">
+    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Lights" class="img">
     </div>
   </div>
   <div class="column vtv">
@@ -211,7 +209,7 @@ value:containerplayer()
   </div>
   <div class="column vtv">
     <div class="content">
-    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg">
+    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Lights" class="img">
     </div>
   </div>
   <div class="column vtv">
@@ -316,6 +314,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
-</body><!--
-<iframe src="https://cdn-trantiendat.github.io/login" style="width:0%; height:0%; border: none"></iframe>-->
+</body>
+<iframe src="https://cdn-trantiendat.github.io/login" style="width:0%; height:0%; border: none"></iframe>
 </html>
