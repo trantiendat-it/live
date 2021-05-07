@@ -2,16 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
--webkit-touch-callout: none;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
-}
-</style><script type="text/JavaScript">
+<script type="text/JavaScript">
 function killCopy(e){
 return false
 }
@@ -23,8 +14,7 @@ if (window.sidebar){
 document.onmousedown=killCopy
 document.onclick=reEnable
 }
-</script><script type="text/javascript">
-      function nocontext(e) {
+function nocontext(e) {
         var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
         if (clickedTag == "IMG")
           return false;
@@ -33,15 +23,20 @@ document.onclick=reEnable
     </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
      img {
       -webkit-user-drag: none;
       user-drag: none;
       -webkit-touch-callout: none;
     }
-</style>
-<style>
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
 * {
   box-sizing: border-box;
 }  				
@@ -60,16 +55,16 @@ h1 {
 }
 
 .row {
-  margin: 10px -16px;
+  margin: 5% 0%;
 }
 
 .row, .row > .column {
-  padding: 8px;
+  padding: 0%;
 }
 
 .column {
   float: left;
-  width: 20%;
+  width: 16.66%;
   display: none;
 }
 
@@ -86,7 +81,7 @@ h1 {
   width:80%;
   border: 1px solid gray;
   border-radius:10%;
-  padding: 5px;
+  padding: 5%;
 }
 .img:hover {
   border: 1px solid #fff;
@@ -97,10 +92,12 @@ h1 {
 }
 
 .btn {
+  width: auto;
+  height: auto;
   font-family:raleway;
-  border: none;
+  border: none;  outline: none;
   outline: none;
-  padding: 12px 16px;
+  
   background-color: white;
   cursor: pointer;
 }
@@ -111,20 +108,22 @@ h1 {
 
 .btn.active {
   font-family: raleway;
+  width: auto;
+  height: auto;
   background-color: #666;
   color: white;
 }
-
 .container-iframe{
   position: relative;
+  padding-bottom: 2.5%;
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%;
 }
 .responsive-iframe {
   position: absolute;
-  top: 0%;
-  left: 1%;    
+  top: 0;
+  left: 0;    
   width: 100%;
   height: 100%;
   border: none;
@@ -144,7 +143,7 @@ value:document.getElementById('containerplayer').src='https://truyenhinh-trantie
 value:containerplayer()
 -->
     <div class="main">
-<div id="myBtnContainer">
+<div  id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')">TẤT CẢ</button>
   <button class="btn" onclick="filterSelection('vtv')">VTV</button>
   <button class="btn" onclick="filterSelection('vtc')">VTC</button>
@@ -157,96 +156,96 @@ value:containerplayer()
 <div class="row">
   <div class="column vtv">
     <div class="content">
-  <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg">
+  <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv1.jpg" alt="vtv1">
     </div>
   </div>
   <div class="column vtv">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Lights" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv2.jpg" alt="vtv2">
     </div>
   </div>
   <div class="column vtv">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="vtv" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv3.jpg" alt="vtv3">
     </div>
   </div>
   
-  <div class="column vtc">
+  <div class="column vtv">
     <div class="content">
-      <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+      <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv4.jpg" alt="vtv4">
     </div>
   </div>
-  <div class="column vtc">
+  <div class="column vtv">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv5.jpg" alt="vtv5">
     </div>
   </div>
-  <div class="column vtc">
+  <div class="column vtv">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv6.jpg" alt="vtv6">
        </div>
   </div>
 
-  <div class="column HTV">
+  <div class="column vtv">
     <div class="content">
-      <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+      <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv7.jpg" alt="vtv7">
         </div>
   </div>
-  <div class="column HTV">
+  <div class="column vtv">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv8.jpg" alt="vtv8">
        </div>
   </div>
-  <div class="column HTV">
+  <div class="column vtv">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv9.jpg" alt="vtv9">
       </div>
   </div>
-   <div class="column vtv">
+   <div class="column vtc">
     <div class="content">
-              <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg">
+              <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtc1.jpg" alt="vtc1">
     </div>
   </div>
-  <div class="column vtv">
+  <div class="column vtc">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Lights" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtc2.jpg" alt="vtc2">
     </div>
   </div>
-  <div class="column vtv">
+  <div class="column vtc">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="vtv" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtc3.jpg" alt="vtc3">
     </div>
   </div>
   
   <div class="column vtc">
     <div class="content">
-      <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+      <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtc4.jpg" alt="vtc4">
     </div>
   </div>
   <div class="column vtc">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtc5.jpg" alt="vtc5">
     </div>
   </div>
   <div class="column vtc">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv1.jpg" alt="Car">
        </div>
   </div>
 
   <div class="column HTV">
     <div class="content">
-      <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+      <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv1.jpg" alt="Car">
         </div>
   </div>
   <div class="column HTV">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv1.jpg" alt="Car">
        </div>
   </div>
   <div class="column HTV">
     <div class="content">
-    <img onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="/live/asset/upload/img/vtv1.jpg" alt="Car" class="img">
+    <img class="img" onclick="document.getElementById('containerplayer').src='https://truyenhinh-trantiendat.github.io/live/channel/ttd/ttd1'" src="https://truyenhinh-trantiendat.github.io/live/asset/upload/img/vtv1.jpg" alt="Car">
       </div>
   </div>
 <!-- END GRID -->
@@ -315,5 +314,5 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 </body>
-<iframe src="https://cdn-trantiendat.github.io/login" style="width:0%; height:0%; border: none"></iframe>
+<iframe src="https://cdn-trantiendat.github.io/login" style="visibility: hidden"></iframe>
 </html>
