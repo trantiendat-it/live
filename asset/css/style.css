@@ -88,14 +88,14 @@ h1 {
   color: white;
 }
 .container-iframe{
-  position: fixed;
+  position: relative;
   padding-bottom: 40%;
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%;
 }
 .responsive-iframe {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;    
   width: 100%;
