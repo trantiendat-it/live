@@ -30,7 +30,7 @@ h1 {
 }
 
 .row {
-  margin: 2.4% 0%;
+  margin: 2.5% 0%;
 }
 
 .row, .row > .column {
@@ -39,7 +39,7 @@ h1 {
 
 .column {
   float: left;
-  width: 16.66%;
+  width: 20%;
   display: none;
 }
 
