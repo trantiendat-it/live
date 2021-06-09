@@ -53,13 +53,32 @@ file:"/live/asset/txt/playlist.txt"});
   .img {
     width: 32%;
     border: 1px solid gray;
-    border-radius: 10%;
+    border-radius: 0%;
     padding: 3%;
   }
   .img:hover {
     border: 1px solid #fff;
   }
 </style>
+<script type='text/JavaScript'>
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ('return false')
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == 'IMG')
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
 <script>
   var player = new Playerjs({
     id: "playerjs",
