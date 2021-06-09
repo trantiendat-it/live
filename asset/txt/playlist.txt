@@ -1,4 +1,6 @@
-[{"title":"Hạ Long Biển Nhớ - Bùi Ngọc Liên","file":"https://youtu.be/OcA2YuFwEM4"},
+[{"title":"VTV1 HD","file":"http://drfamaga5qliv.vcdn.cloud/vtv01/vtv01@1080p.m3u8"},
+
+{"title":"Hạ Long Biển Nhớ - Bùi Ngọc Liên","file":"https://youtu.be/OcA2YuFwEM4"},
 
 {"title":"Nhật Lệ Trong Tôi - Thanh Tài","file":"https://youtu.be/lTZstjzBDLg"},
 
