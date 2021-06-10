@@ -1,4 +1,4 @@
-[{"title":"VTV1 HD","file":"https://on-trantiendat.shortcm.li/vtv1.truyenhinh.trantiendat.com.vn", "poster":"https://static.fptplay.net/static/img/share/channels/icon_channel_su-kien-3_162314132733.jpg"},
+[{"title":"VTV1 HD","file":"https://on-trantiendat.shortcm.li/vtv1.truyenhinh.trantiendat.com.vn", "poster":"https://static.fptplay.net/static/img/share/channels/icon_channel_su-kien-3_162314132733.jpg" },
  
 {"title":"Hạ Long Biển Nhớ - Bùi Ngọc Liên","file":"https://youtu.be/OcA2YuFwEM4"},
 
